@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /demo
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600
+  redis:
+    host: localhost
+    port: 6379
+external :
+  randomUser:
+    url: https://randomuser.me/api/
